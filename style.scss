@@ -1,0 +1,125 @@
+/* All the vars */
+
+$outline: 2px solid black;
+    
+@mixin noExtra {
+    margin: 0;
+    box-sizing: border-box;
+}
+    
+$grey: #C2C2D6;
+
+@mixin shadow($px) {
+    text-shadow: $px $px 2px $grey;
+}
+
+$greySide: 2em dotted $grey;
+    
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+html {
+    @include noExtra;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+body {
+    @include noExtra;
+    background: url('images/contemporary_china.png');
+    font-family: Verdana;
+    text-align: center;
+    width: 100%;
+}
+    
+
+
+    header {
+        @include noExtra;
+        border-bottom: $outline;
+        overflow: hidden;
+        background-size: 100% auto;
+        background: url('images/greyWall.jpg');
+    
+        }
+    
+            h1 {
+                @include shadow(2px);
+                color: white;
+                padding-top: 1em;
+            }
+
+            h3 {
+                @include shadow (1px);
+                text-align: right;
+                padding-right: 3em;
+            }
+
+
+
+    #main {
+        margin: 0 6em;
+        background: url('images/wet_snow.png');
+        border-radius: 7em;
+        border-right: $greySide;
+        border-left: $greySide;
+        padding: 1em 1em 3em 1em;
+        position: relative;
+    }
+
+    #left {
+        box-sizing: border-box;
+        width: 50%;
+
+        float: left;
+        margin: 3em 0;
+        height: 75%;
+        padding: 2em;
+    }
+        p {
+            background: rgba(131, 44, 203, 0.5);
+            border-radius: 2em;
+            padding: 0.5em;
+        }
+
+    #right{
+        @extend #left;
+        float: right;
+        text-align: center;
+    }
+        #actor {
+            height: 5em;
+            width: 5em;
+            background: blue;
+            border-radius: 1em;
+            position: relative;
+            left: 40%
+        }
+        h4 {
+            margin-bottom: 0;
+            text-shadow: 1px 1px 2px $grey;
+            background: rgba(0,0,0,0.5);
+            border-radius: 2em;
+            border: 1px dashed black;
+        }
+
+
+        ul {
+            @include noExtra;
+            clear: both;
+        }
+
+            li {
+                @include shadow(1px);
+                width: 31.5%;
+                display: inline-block;
+                border-radius: 1.5em;
+                border: $outline;
+                padding: 1em;
+                box-sizing: border-box;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }

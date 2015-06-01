@@ -1,0 +1,95 @@
+/* All the vars */
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+html {
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 0; }
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background: url("images/contemporary_china.png");
+  font-family: Verdana;
+  text-align: center;
+  width: 100%; }
+
+header {
+  margin: 0;
+  box-sizing: border-box;
+  border-bottom: 2px solid black;
+  overflow: hidden;
+  background-size: 100% auto;
+  background: url("images/greyWall.jpg"); }
+
+h1 {
+  text-shadow: 2px 2px 2px #C2C2D6;
+  color: white;
+  padding-top: 1em; }
+
+h3 {
+  text-shadow: 1px 1px 2px #C2C2D6;
+  text-align: right;
+  padding-right: 3em; }
+
+#main {
+  margin: 0 6em;
+  background: url("images/wet_snow.png");
+  border-radius: 7em;
+  border-right: 2em dotted #C2C2D6;
+  border-left: 2em dotted #C2C2D6;
+  padding: 1em 1em 3em 1em;
+  position: relative; }
+
+#left, #right {
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  margin: 3em 0;
+  height: 75%;
+  padding: 2em; }
+
+p {
+  background: rgba(131, 44, 203, 0.5);
+  border-radius: 2em;
+  padding: 0.5em; }
+
+#right {
+  float: right;
+  text-align: center; }
+
+#actor {
+  height: 5em;
+  width: 5em;
+  background: blue;
+  border-radius: 1em;
+  position: relative;
+  left: 40%; }
+
+h4 {
+  margin-bottom: 0;
+  text-shadow: 1px 1px 2px #C2C2D6;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 2em;
+  border: 1px dashed black; }
+
+ul {
+  margin: 0;
+  box-sizing: border-box;
+  clear: both; }
+
+li {
+  text-shadow: 1px 1px 2px #C2C2D6;
+  width: 31.5%;
+  display: inline-block;
+  border-radius: 1.5em;
+  border: 2px solid black;
+  padding: 1em;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+/*# sourceMappingURL=style.css.map */
